@@ -1,0 +1,116 @@
+body {
+    padding-top: 70px;
+    background-color: #f5f7fb;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.logo-nav {
+    width: 42px;
+}
+
+/* HERO */
+.hero-modern {
+    background: linear-gradient(135deg, #1c1a5e, #0b4f87);
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-subtitle {
+    color: #00c8ff;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.hero-title {
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.hero-title span {
+    color: #00c8ff;
+}
+
+.hero-description {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.hero-image {
+    max-width: 90%;
+    z-index: 2;
+    position: relative;
+}
+
+.hero-square {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border: 4px solid #00c8ff;
+    top: 15%;
+    right: 15%;
+}
+
+.hero-bar {
+    position: absolute;
+    width: 200px;
+    height: 6px;
+    background: #00c8ff;
+    bottom: 20%;
+    left: 10%;
+}
+
+/* SERVICIOS */
+.service-card {
+    border-radius: 15px;
+    transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 30px rgba(0,0,0,0.25);
+}
+
+.service-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.video-box video {
+    max-width: 60%;
+    border-radius: 15px;
+}
+
+.map-container iframe {
+    width: 80%;
+    height: 350px;
+    border: none;
+    border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 34px;
+    }
+    .hero-square,
+    .hero-bar {
+        display: none;
+    }
+}
+
+.catalog-card {
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.catalog-card img {
+    height: 180px;
+    object-fit: cover;
+}
+
+.catalog-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Papelería Compu Click</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="Multimedia/Compu_Click.png" alt="Logo Compu Click" class="logo-nav">
+            <span class="ms-2">Compu Click</span>
+        </a>
+
+        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#catalogo">Catálogo</a></li>
+                <li class="nav-item"><a class="nav-link" href="#precios">Precios</a></li>
+                <li class="nav-item"><a class="nav-link" href="#video">Video</a></li>
+                <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- ===================== HERO MODIFICADO (SIN BORRAR NADA MÁS) ===================== -->
+<header class="hero-modern">
+    <div class="container">
+        <div class="row align-items-center">
+
+            <!-- TEXTO -->
+            <div class="col-md-6 text-light">
+                <h5 class="hero-subtitle">CRECE CON NOSOTROS</h5>
+                <h1 class="hero-title">
+                    PAPELERÍA <br>
+                    <span>COMPU CLICK</span>
+                </h1>
+                <p class="hero-description">
+                    Todo en útiles escolares, oficina, impresiones y servicios digitales para estudiantes y empresas.
+                </p>
+                <a href="#catalogo" class="btn btn-primary btn-lg me-2">Ver catálogo</a>
+                <a href="#contacto" class="btn btn-outline-light btn-lg">Contáctanos</a>
+            </div>
+
+            <!-- IMAGEN -->
+            <div class="col-md-6 position-relative text-center">
+                <img src="Multimedia/Portada1.png" alt="Atención al cliente" class="img-fluid hero-image">
+                <div class="hero-square"></div>
+                <div class="hero-bar"></div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<main class="container my-5">
+
+<!-- ===================== SERVICIOS ===================== -->
+<section id="servicios" class="my-5">
+    <h2 class="text-center mb-4">Nuestros Servicios</h2>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+            <a href="Multimedia/Catalogo_2025.pdf" target="_blank" class="service-link">
+                <div class="card service-card h-100">
+                    <img src="Multimedia/Catalogo.png" class="card-img-top" alt="Catalogo">
+                    <div class="card-body">
+                        <h3>Catálogo</h3>
+                        <p>Consulta nuestro catálogo general.
+                            Una amplia selección de productos para tus estudios, oficina y hogar..</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-4">
+            <a href="promociones.html" target="_blank" class="service-link">
+                <div class="card service-card h-100">
+                    <img src="Multimedia/Ofertas.png" class="card-img-top" alt="Útiles Escolares">
+                    <div class="card-body">
+                        <h3>Descuentos y Promociones</h3>
+                        <p>🖊️🔥 Tus útiles favoritos, ahora con grandes descuentos. Aquí encuentras ofertas
+                            increíbles en artículos escolares. ¡Ven y descubre todo lo que tenemos para ti! ✨.</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col-md-4">
+                <div class="card service-card h-100">
+
+                    <!-- Carrusel -->
+                    <div id="carouselOficina" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2500">
+                        <div class="carousel-inner">
+
+                            <div class="carousel-item active">
+                                <img src="Multimedia/Servicios/Impresiones.png" class="card-img-top" alt="Impresiones">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="Multimedia/Servicios/Copias.jpg" class="card-img-top" alt="Copias">
+                            </div>
+
+                            <div class="carousel-item">
+                                <img src="Multimedia/Servicios/Escaneo.jpg" class="card-img-top" alt="Escaneo">
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Contenido -->
+                    <div class="card-body text-center">
+                        <h3>Multi Setvicios</h3>
+                        <p>Compu Click ofrece impresiones en color y blanco/negro, copias rápidas de cualquier
+                            volumen para empresas y estudiantes, y escaneo en alta resolución en JPG y PDF..</p>
+                    </div>
+
+                </div>
+            </a>
+        </div>
+
+
+    </div>
+</section>
+
+<!-- ===================== CATÁLOGO DESTACADO ===================== -->
+<section id="catalogo" class="my-5">
+    <h2 class="text-center mb-4">Catálogo Destacado</h2>
+
+    <div class="row row-cols-1 row-cols-md-4 g-4">
+
+        <div class="col">
+            <div class="card catalog-card h-100 text-center">
+                <img src="Multimedia/Destacado/Cuaderno.jpg" class="card-img-top" alt="Cuadernos">
+                <div class="card-body">
+                    <h5 class="card-title">Cuadernos</h5>
+                    <p class="card-text">📓✏️ ¡Cuadernos de todas las marcas y diseños en Compu Click!
+                        Tapa dura, espiral, rayado o liso para escuela y oficina.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card catalog-card h-100 text-center">
+                <img src="Multimedia/Destacado/Esferos.jpg" class="card-img-top" alt="Plumas">
+                <div class="card-body">
+                    <h5 class="card-title">Esferos y Lápices</h5>
+                    <p class="card-text">🖊️✏️ ¡Esferos y lápices de múltiples marcas en Compu Click!
+                        Punta fina, gel, HB o 2B para escribir sin límites.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card catalog-card h-100 text-center">
+                <img src="Multimedia/Destacado/Pinturas.png" class="card-img-top" alt="Cartuchos">
+                <div class="card-body">
+                    <h5 class="card-title">Pinturas y Marcadores</h5>
+                    <p class="card-text">🎨✨ ¡Pinturas y marcadores de varias marcas y diseños en
+                            Compu Click! Colores vibrantes para arte, oficina y escuela.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card catalog-card h-100 text-center">
+                <img src="Multimedia/Destacado/Carpetas.png" class="card-img-top" alt="Carpetas">
+                <div class="card-body">
+                    <h5 class="card-title">Carpetas</h5>
+                    <p class="card-text">📁✨¡Carpetas de todo tipo en Compu Click! Plásticas, cartón,
+                        con elástico, organizadores, archivadores y más, para la escuela y oficina.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ===================== PRECIOS REFERENCIALES ===================== -->
+<section id="precios" class="my-5">
+    <h2 class="text-center mb-3">Precio de Servicios</h2>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped">
+            <thead class="table-dark">
+                <tr>
+                    <th>Servicio</th>
+                    <th>Detalle</th>
+                    <th>Precio</th>
+                    <th>Tiempo</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Impresión B/N</td><td>Documento</td><td>$0.10</td><td>Rápido</td></tr>
+                <tr><td>Impresión color</td><td>Alta calidad</td><td>$0.50</td><td>Rápido</td></tr>
+                <tr><td>Copias</td><td>Libros</td><td>$0.10</td><td>1–3 min</td></tr>
+                <tr><td>Escaneo</td><td>PDF / JPG</td><td>$0.20</td><td>5 min</td></tr>
+                <tr><td>Recargas</td><td>Telefonía</td><td>Variable</td><td>Inmediato</td></tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
+<section class="my-5">
+    <div class="container">
+        <div class="row g-4 align-items-start">
+
+            <!-- Video -->
+            <div class="col-md-6 text-center" id="video">
+                <h2>Recargas y Pagos de Servicios</h2>
+                <div class="video-box mx-auto">
+                    <video controls class="w-100 rounded">
+                        <source src="Multimedia/Video.mp4" type="video/mp4">
+                        Tu navegador no soporta video.
+                    </video>
+                    <p>📱💳 Recarga tu celular, paga servicios básicos,
+                        tarjetas de créditoy más. ¡Rápido, seguro y al instante! </p>
+                </div>
+            </div>
+
+            <!-- Ubicación -->
+            <div class="col-md-6 text-center" id="ubicacion">
+                <h2>Nuestra ubicación</h2>
+                <div class="map-container rounded overflow-hidden">
+                    <iframe 
+                        src="https://www.google.com/maps?q=Papeleria+Compu+Click&output=embed"
+                        width="100%" 
+                        height="315" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy">
+                    </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- ===================== CONTÁCTANOS ===================== -->
+<section id="contacto" class="contact-section my-5">
+    <div class="container">
+        <div class="row align-items-center g-4">
+
+            <!-- Información + Formulario -->
+            <div class="col-lg-7">
+                <h2 class="mb-2">CONTÁCTANOS</h2>
+                <p class="text-primary mb-4">
+                    Uno de nuestros ejecutivos con gusto le atenderá
+                </p>
+
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="tel" class="form-control" placeholder="Teléfono">
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control" placeholder="Correo">
+                    </div>
+                    <div class="col-md-6">
+                        <select class="form-control">
+                            <option selected>Interesado en...</option>
+                            <option>Impresiones/Copias/Escaneo</option>
+                            <option>Útiles escolares</option>
+                            <option>Artículos de oficina</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <textarea class="form-control" rows="4" placeholder="Mensaje"></textarea>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary px-4">
+                            Enviar mensaje
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-5">
+                <div class="contact-gallery">
+
+                    <div class="gallery-small">
+                        <img src="Multimedia/Contacto/Contacto.png" alt="Teléfono">
+
+                    </div>
+
+                </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+</main>
+
+<footer class="bg-dark text-light text-center p-3">
+    <p>© 2025 Papelería Compu Click</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

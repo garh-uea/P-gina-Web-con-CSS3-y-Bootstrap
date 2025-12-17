@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Galería Compu Click</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #e8f1ff, #f2f7ff);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .gallery-box {
+            background: linear-gradient(180deg, #cfe2ff, #e3f0ff);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.18);
+            max-width: 850px;
+            width: 100%;
+        }
+
+        .carousel-item img {
+            max-height: 320px;
+            border-radius: 15px;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(13,110,253,0.7);
+            border-radius: 50%;
+            padding: 18px;
+        }
+
+        .carousel-indicators button {
+            background-color: #0d6efd;
+        }
+
+        h2 {
+            color: #0a3d91;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="gallery-box text-center">
+    <h2 class="mb-4">Promociones del mes</h2>
+
+    <div id="galeriaCompuClick" class="carousel slide"
+         data-bs-ride="carousel" data-bs-interval="3000">
+
+        <div class="carousel-indicators">
+            <button data-bs-target="#galeriaCompuClick" data-bs-slide-to="0" class="active"></button>
+            <button data-bs-target="#galeriaCompuClick" data-bs-slide-to="1"></button>
+            <button data-bs-target="#galeriaCompuClick" data-bs-slide-to="2"></button>
+            <button data-bs-target="#galeriaCompuClick" data-bs-slide-to="3"></button>
+            <button data-bs-target="#galeriaCompuClick" data-bs-slide-to="4"></button>            
+            <button data-bs-target="#galeriaCompuClick" data-bs-slide-to="5"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Multimedia/Promociones/Combo1.jpg" class="d-block mx-auto img-fluid" alt="Imagen 1">
+            </div>
+
+            <div class="carousel-item">
+                <img src="Multimedia/Promociones/Combo2.jpg" class="d-block mx-auto img-fluid" alt="Imagen 2">
+            </div>
+
+            <div class="carousel-item">
+                <img src="Multimedia/Promociones/Promo_Disney.jpg" class="d-block mx-auto img-fluid" alt="Imagen 3">
+            </div>    
+
+            <div class="carousel-item">
+                <img src="Multimedia/Promociones/Craft.jpg" class="d-block mx-auto img-fluid" alt="Imagen 4">
+            </div>                    
+            
+            <div class="carousel-item">
+                <img src="Multimedia/Promociones/Kit_Escolar.jpg" class="d-block mx-auto img-fluid" alt="Imagen 5">
+            </div>                    
+            
+            <div class="carousel-item">
+                <img src="Multimedia/Promociones/Chips.jpg" class="d-block mx-auto img-fluid" alt="Imagen 6">
+            </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button"
+                data-bs-target="#galeriaCompuClick" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button"
+                data-bs-target="#galeriaCompuClick" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
